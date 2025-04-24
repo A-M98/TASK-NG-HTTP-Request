@@ -3,6 +3,12 @@
     class="border border-black rounded-md w-[70%] h-[70%] overflow-hidden flex flex-col md:flex-row p-5"
   >
     <div class="h-full w-full md:w-[35%]">
+      <button
+        class="w-[70px] border border-black rounded-md hover:bg-yellow-600"
+        (click)="this.router.navigate(['/pets'])"
+      >
+        Back
+      </button>
       <img
         [src]="pet?.image"
         [alt]="pet?.name"
